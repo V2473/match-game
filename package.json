@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "http-server -c-1 -o"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "http-server": "^14.1.1"
+  }
+}

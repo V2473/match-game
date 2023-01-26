@@ -42,7 +42,7 @@ let MatchGridLogic = (
   };
 
   game.onmouseleave = () => {
-    if (currentStage === stages[0]) {
+    if (currentStage === stages[0] || currentStage === stages[3]) {
       return;
     }
     currentStage = stages[4];
@@ -108,7 +108,7 @@ let MatchGridLogic = (
     }
 
     if (currentStage === stages[3]) {
-      overlayText.innerHTML = "You win!";
+      overlayText.innerHTML = "You won!";
       pauseTimer();
       overlay.classList.add("overlay-active");
       resume.style.display = "none";
@@ -176,7 +176,7 @@ let MatchGridLogic = (
 
   let win = () => {
     currentStage = stages[3];
-    menuText.innerHTML = "You win";
+    menuText.innerHTML = "You won";
     menu.classList.add("win");
     // overlay.classList.add("overlay");
     overlayChange();

@@ -42,6 +42,9 @@ let MatchGridLogic = (
   };
 
   game.onmouseleave = () => {
+    if (currentStage === stages[0]) {
+      return;
+    }
     currentStage = stages[4];
     overlayChange();
   };

@@ -41,6 +41,11 @@ let MatchGridLogic = (
     overlayChange();
   };
 
+  game.onmouseleave = () => {
+    currentStage = stages[4];
+    overlayChange();
+  };
+
   menuText.classList.add("menu-text");
 
   menu.appendChild(menuButton);
